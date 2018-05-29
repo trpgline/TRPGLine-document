@@ -1,31 +1,32 @@
 
-- 一般擲骰
+- Basic Roll
   - 1D100
     - \[ 1D100: 42 = 42 \] => 42
   - 3D6
     - \[ 3D6: 6, 4, 3 = 13 \] => 13
-- 含四則運算擲骰
+- Roll dice with math
   - 1D6 + 6
     - \[ 1D6: 6 = 6 \] + 6 => 12
   - 4* (3 + 2D12) + 5 * 1D4
     - 4* (3 + \[ 2D12: 4, 2 = 6 ]) + 5 * \[ 1D4: 2 = 2 ] => 46
-- 只取指令數量最高數值的骰
+- Get the highest result
   - 6D12H3
     - \[ 6D12H3: 3, 10, 6, 3, 12, 9 | 12, 10, 9 = 31 ] => 31
-- 只取指令數量最低數值的骰
+- Get the lowest result
   - 6D12L3
     - \[ 6D12L3: 8, 9, 9, 8, 11, 6 | 6, 8, 8 = 22 ] => 22
-- 比較數值
+- Roll and do comparism
   - 1D100 < 50
     - \[ 1D100: 36 = 36 ] < 50 => {36 < 50} => true
-- 指令含技能名稱
-  - 1D6 @偵查
+- Including additional information
+  - 1D6 @Search
     - \[ 1D6: 6 = 6 ] + 6 => 12
-- …….撒尿牛丸
-  - 4* (3 + 5D4H3) + 5 * 2D20L1 <= 35 @偵查
+- Mix everything together
+  - 4* (3 + 5D4H3) + 5 * 2D20L1 <= 35 @Search
     - 4* (3 + \[ 5D4H3: 4, 3, 3, 2, 3 | 4, 3, 3 = 10 ]) + 5 * \[ 2D20L1: 10, 13 | 10 = 10 ] <= 35 => {102 <= 35} => false
-- 計算多少顆成功
+- Roll and check how many success
   - 2D4 + 5B6 <= 10
     - \[2D4: 2,3 = 5] + 5B6 <= 10=> {5 + \[5B6: 2,2,6,1,5] <= 10} => 4
-- 滑鼠右鍵帶入變數
-  - 1D100 < ?? 右鍵調查(50) 變成1D100 < 50 @調查
+- import kill value into variable
+  - 1D100 < ??
+    - On right click search(50), it will change to **1D100 < 50 @search**
