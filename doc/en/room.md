@@ -1,5 +1,4 @@
-<img src="../../img/screen-shot.png" width="750" />
-
+![筆記控制台](../../img/screen-shot.png)
 
 ## Channel Module
 
